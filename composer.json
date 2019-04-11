@@ -26,9 +26,9 @@
         "php": ">=7.1.3",
         "doctrine/dbal": "^2.5",
         "illuminate/support": "^5.7",
-        "grafite/crudmaker": "develop",
-        "grafite/formmaker": "master",
-        "grafite/crypto": "develop"
+        "grafite/crudmaker": "dev-develop",
+        "grafite/formmaker": "dev-master",
+        "grafite/crypto": "dev-develop"
     },
     "require-dev": {
         "mockery/mockery": "~1.0",
