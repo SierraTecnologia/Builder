@@ -11,15 +11,19 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/jpranskaitis/formmaker"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/jpranskaitis/crudmaker"
-        },
-        {
+            "url": "https://github.com/jpranskaitis/cms"
+        },{
             "type": "vcs",
             "url": "https://github.com/jpranskaitis/crypto"
+        },{
+            "type": "vcs",
+            "url": "https://github.com/jpranskaitis/crudmaker"
+        },{
+            "type": "vcs",
+            "url": "https://github.com/jpranskaitis/builder"
+        },{
+            "type": "vcs",
+            "url": "https://github.com/jpranskaitis/formmaker"
         }
     ],
     "require": {
