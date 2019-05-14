@@ -4,35 +4,35 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Justas Pranskaitis",
-            "email": "pranskaitis.justas@gmail.com"
+            "name": "Ricardo Sierra",
+            "email": "contato@sierratecnologia.com.br"
         }
     ],
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/jpranskaitis/cms"
+            "url": "https://github.com/SierraTecnologia/cms"
         },{
             "type": "vcs",
-            "url": "https://github.com/jpranskaitis/crypto"
+            "url": "https://github.com/SierraTecnologia/crypto"
         },{
             "type": "vcs",
-            "url": "https://github.com/jpranskaitis/crudmaker"
+            "url": "https://github.com/SierraTecnologia/crudmaker"
         },{
             "type": "vcs",
-            "url": "https://github.com/jpranskaitis/builder"
+            "url": "https://github.com/SierraTecnologia/builder"
         },{
             "type": "vcs",
-            "url": "https://github.com/jpranskaitis/formmaker"
+            "url": "https://github.com/SierraTecnologia/formmaker"
         }
     ],
     "require": {
         "php": ">=7.1.3",
         "doctrine/dbal": "^2.5",
         "illuminate/support": "^5.7",
-        "grafite/crudmaker": "dev-develop",
+        "grafite/crudmaker": "dev-master",
         "grafite/formmaker": "dev-master",
-        "grafite/crypto": "dev-develop"
+        "grafite/crypto": "dev-master"
     },
     "require-dev": {
         "mockery/mockery": "~1.0",
