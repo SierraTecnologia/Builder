@@ -2,7 +2,7 @@
 
 namespace {{App\}}Models;
 
-use Laravel\Cashier\Billable;
+use SierraTecnologia\Cashier\Billable;
 use {{App\}}Models\User;
 use Illuminate\Database\Eloquent\Model;
 
