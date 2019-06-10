@@ -11,7 +11,7 @@
     "require": {
         "php": ">=7.1.3",
         "doctrine/dbal": "^2.5",
-        "illuminate/support": "^5.7",
+        "illuminate/support": "^5.8",
         "sierratecnologia/crudmaker": "dev-master",
         "sierratecnologia/formmaker": "dev-master",
         "sierratecnologia/crypto": "dev-master"
