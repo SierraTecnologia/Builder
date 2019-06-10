@@ -8,20 +8,6 @@
             "email": "contato@sierratecnologia.com.br"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/SierraTecnologia/crypto"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/SierraTecnologia/crudmaker"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/SierraTecnologia/formmaker"
-        }
-    ],
     "require": {
         "php": ">=7.1.3",
         "doctrine/dbal": "^2.5",
