@@ -13,7 +13,7 @@ class AddBillingsToUserMeta extends Migration
     public function up()
     {
         Schema::table('user_meta', function ($table) {
-            $table->string('stripe_id')->nullable();
+            $table->string('sitecpayment_id')->nullable();
             $table->string('card_brand')->nullable();
             $table->string('card_last_four')->nullable();
         });
@@ -27,7 +27,7 @@ class AddBillingsToUserMeta extends Migration
     public function down()
     {
         Schema::table('user_meta', function ($table) {
-            $table->dropColumn(['stripe_id', 'card_brand', 'card_last_four']);
+            $table->dropColumn(['sitecpayment_id', 'card_brand', 'card_last_four']);
         });
     }
 }
