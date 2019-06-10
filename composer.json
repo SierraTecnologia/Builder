@@ -11,17 +11,13 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/SierraTecnologia/cms"
-        },{
-            "type": "vcs",
             "url": "https://github.com/SierraTecnologia/crypto"
-        },{
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/SierraTecnologia/crudmaker"
-        },{
-            "type": "vcs",
-            "url": "https://github.com/SierraTecnologia/builder"
-        },{
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/SierraTecnologia/formmaker"
         }
