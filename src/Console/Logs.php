@@ -1,12 +1,12 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
-use Grafite\Builder\Console\GrafiteCommand;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Console\SierraTecnologiaCommand;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 use Illuminate\Filesystem\Filesystem;
 
-class Logs extends GrafiteCommand
+class Logs extends SierraTecnologiaCommand
 {
     use FileMakerTrait;
 
@@ -15,14 +15,14 @@ class Logs extends GrafiteCommand
      *
      * @var string
      */
-    protected $signature = 'grafite:logs';
+    protected $signature = 'sierratecnologia:logs';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will add a logs listing UI to your app';
+    protected $description = 'SierraTecnologia Builder will add a logs listing UI to your app';
 
     /**
      * Execute the console command.
@@ -58,7 +58,7 @@ class Logs extends GrafiteCommand
                 $this->comment("\n }");
                 $this->info("\n Finished setting up logs");
             } else {
-                $this->info("\n You cancelled the grafite:logs");
+                $this->info("\n You cancelled the sierratecnologia:logs");
             }
         }
     }

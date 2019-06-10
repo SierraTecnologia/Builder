@@ -1,12 +1,12 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
-use Grafite\Builder\Console\GrafiteCommand;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Console\SierraTecnologiaCommand;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 use Illuminate\Filesystem\Filesystem;
 
-class Notifications extends GrafiteCommand
+class Notifications extends SierraTecnologiaCommand
 {
     use FileMakerTrait;
 
@@ -15,14 +15,14 @@ class Notifications extends GrafiteCommand
      *
      * @var string
      */
-    protected $signature = 'grafite:notifications';
+    protected $signature = 'sierratecnologia:notifications';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will add notifications to your app';
+    protected $description = 'SierraTecnologia Builder will add notifications to your app';
 
     /**
      * Execute the console command.
@@ -66,7 +66,7 @@ class Notifications extends GrafiteCommand
                 $this->comment("\n });");
                 $this->info("\n Finished setting up notifications");
             } else {
-                $this->info("\n You cancelled the grafite:notifications");
+                $this->info("\n You cancelled the sierratecnologia:notifications");
             }
         }
     }

@@ -6,7 +6,7 @@ class NotificationsTest extends TestCase
     {
         parent::setUp();
 
-        $this->artisan('grafite:starter')
+        $this->artisan('sierratecnologia:starter')
             ->expectsQuestion('Are you sure you want to overwrite any files of the same name?', true)
             ->expectsQuestion('Would you like to run the migration?', false)
             ->assertExitCode(0);
@@ -14,7 +14,7 @@ class NotificationsTest extends TestCase
 
     public function testBootstrapCommand()
     {
-        $this->artisan('grafite:notifications')
+        $this->artisan('sierratecnologia:notifications')
             ->expectsQuestion('Are you sure you want to overwrite any files of the same name?', true)
             ->assertExitCode(0);
     }

@@ -1,12 +1,12 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
-use Grafite\Builder\Console\GrafiteCommand;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Console\SierraTecnologiaCommand;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 use Illuminate\Filesystem\Filesystem;
 
-class Activity extends GrafiteCommand
+class Activity extends SierraTecnologiaCommand
 {
     use FileMakerTrait;
 
@@ -15,14 +15,14 @@ class Activity extends GrafiteCommand
      *
      * @var string
      */
-    protected $signature = 'grafite:activity';
+    protected $signature = 'sierratecnologia:activity';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will add an activity tracker for your users';
+    protected $description = 'SierraTecnologia Builder will add an activity tracker for your users';
 
     /**
      * Execute the console command.
@@ -60,7 +60,7 @@ class Activity extends GrafiteCommand
                 $this->comment("\n ]");
                 $this->info("\n Finished setting up activity");
             } else {
-                $this->info("\n You cancelled the grafite:activity");
+                $this->info("\n You cancelled the sierratecnologia:activity");
             }
         }
     }

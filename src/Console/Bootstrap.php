@@ -1,12 +1,12 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
-use Grafite\Builder\Console\GrafiteCommand;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Console\SierraTecnologiaCommand;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 use Illuminate\Filesystem\Filesystem;
 
-class Bootstrap extends GrafiteCommand
+class Bootstrap extends SierraTecnologiaCommand
 {
     use FileMakerTrait;
 
@@ -15,14 +15,14 @@ class Bootstrap extends GrafiteCommand
      *
      * @var string
      */
-    protected $signature = 'grafite:bootstrap';
+    protected $signature = 'sierratecnologia:bootstrap';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will bootstrap your app';
+    protected $description = 'SierraTecnologia Builder will bootstrap your app';
 
     /**
      * Execute the console command.
@@ -56,7 +56,7 @@ class Bootstrap extends GrafiteCommand
                 $this->comment("npm run production <- run for production\n");
                 $this->info("Finished bootstrapping your app\n");
             } else {
-                $this->info('You cancelled the grafite:bootstrap');
+                $this->info('You cancelled the sierratecnologia:bootstrap');
             }
         }
     }

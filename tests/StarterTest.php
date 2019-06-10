@@ -4,14 +4,14 @@ class StarterTest extends TestCase
 {
     public function testStarterCommandWithoutStarter()
     {
-        $this->artisan('grafite:starter')
+        $this->artisan('sierratecnologia:starter')
             ->expectsQuestion('Are you sure you want to overwrite any files of the same name?', false)
             ->assertExitCode(0);
     }
 
     public function testStarterCommand()
     {
-        $this->artisan('grafite:starter')
+        $this->artisan('sierratecnologia:starter')
             ->expectsQuestion('Are you sure you want to overwrite any files of the same name?', true)
             ->expectsQuestion('Would you like to run the migration?', false)
             ->assertExitCode(0);

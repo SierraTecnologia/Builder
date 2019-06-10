@@ -1,12 +1,12 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
-use Grafite\Builder\Console\GrafiteCommand;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Console\SierraTecnologiaCommand;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 use Illuminate\Filesystem\Filesystem;
 
-class Socialite extends GrafiteCommand
+class Socialite extends SierraTecnologiaCommand
 {
     use FileMakerTrait;
 
@@ -15,14 +15,14 @@ class Socialite extends GrafiteCommand
      *
      * @var string
      */
-    protected $signature = 'grafite:socialite';
+    protected $signature = 'sierratecnologia:socialite';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will add a Socialite auth to your app';
+    protected $description = 'SierraTecnologia Builder will add a Socialite auth to your app';
 
     /**
      * Execute the console command.
@@ -70,7 +70,7 @@ class Socialite extends GrafiteCommand
                 $this->comment("\n require base_path('routes/socialite.php');");
                 $this->info('Finished setting up a basic socialite structure');
             } else {
-                $this->info('You cancelled the grafite:socialite');
+                $this->info('You cancelled the sierratecnologia:socialite');
             }
         }
     }

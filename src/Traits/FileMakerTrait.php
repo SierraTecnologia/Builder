@@ -1,6 +1,6 @@
 <?php
 
-namespace Grafite\Builder\Traits;
+namespace SierraTecnologia\Builder\Traits;
 
 use Illuminate\Console\DetectsApplicationNamespace;
 use Illuminate\Filesystem\Filesystem;

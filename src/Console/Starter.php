@@ -1,11 +1,11 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Artisan;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 
 class Starter extends Command
 {
@@ -16,14 +16,14 @@ class Starter extends Command
      *
      * @var string
      */
-    protected $signature = 'grafite:starter';
+    protected $signature = 'sierratecnologia:starter';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will build some common parts of your app';
+    protected $description = 'SierraTecnologia Builder will build some common parts of your app';
 
     /**
      * Execute the console command.
@@ -98,7 +98,7 @@ class Starter extends Command
                 $this->comment('artisan migrate --seed');
             }
         } else {
-            $this->info('You cancelled the grafite:starter');
+            $this->info('You cancelled the sierratecnologia:starter');
         }
     }
 

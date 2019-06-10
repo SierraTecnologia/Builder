@@ -6,7 +6,7 @@ class ApiTest extends TestCase
     {
         parent::setUp();
 
-        $this->artisan('grafite:starter')
+        $this->artisan('sierratecnologia:starter')
             ->expectsQuestion('Are you sure you want to overwrite any files of the same name?', true)
             ->expectsQuestion('Would you like to run the migration?', false)
             ->assertExitCode(0);
@@ -14,7 +14,7 @@ class ApiTest extends TestCase
 
     public function testApiCommand()
     {
-        $this->artisan('grafite:api')
+        $this->artisan('sierratecnologia:api')
             ->expectsQuestion('Are you sure you want to overwrite any files of the same name?', true)
             ->assertExitCode(0);
     }

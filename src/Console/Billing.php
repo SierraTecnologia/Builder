@@ -1,12 +1,12 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
-use Grafite\Builder\Console\GrafiteCommand;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Console\SierraTecnologiaCommand;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 use Illuminate\Filesystem\Filesystem;
 
-class Billing extends GrafiteCommand
+class Billing extends SierraTecnologiaCommand
 {
     use FileMakerTrait;
 
@@ -15,14 +15,14 @@ class Billing extends GrafiteCommand
      *
      * @var string
      */
-    protected $signature = 'grafite:billing';
+    protected $signature = 'sierratecnologia:billing';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will add billing to your app';
+    protected $description = 'SierraTecnologia Builder will add billing to your app';
 
     /**
      * Execute the console command.
@@ -75,7 +75,7 @@ class Billing extends GrafiteCommand
                 $this->comment("\n\n ** You will need to configure your app to handle cancelling subscriptions when deleting users. **");
                 $this->info('Finished setting up billing');
             } else {
-                $this->info('You cancelled the grafite:billing');
+                $this->info('You cancelled the sierratecnologia:billing');
             }
         }
     }

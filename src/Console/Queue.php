@@ -1,12 +1,12 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
-use Grafite\Builder\Console\GrafiteCommand;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Console\SierraTecnologiaCommand;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 use Illuminate\Filesystem\Filesystem;
 
-class Queue extends GrafiteCommand
+class Queue extends SierraTecnologiaCommand
 {
     use FileMakerTrait;
 
@@ -15,14 +15,14 @@ class Queue extends GrafiteCommand
      *
      * @var string
      */
-    protected $signature = 'grafite:queue';
+    protected $signature = 'sierratecnologia:queue';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will add a database driven queue manager for your app';
+    protected $description = 'SierraTecnologia Builder will add a database driven queue manager for your app';
 
     /**
      * Execute the console command.
@@ -58,7 +58,7 @@ class Queue extends GrafiteCommand
                 $this->comment("\n }");
                 $this->info("\n Finished setting up queue");
             } else {
-                $this->info("\n You cancelled the grafite:queue");
+                $this->info("\n You cancelled the sierratecnologia:queue");
             }
         }
     }

@@ -1,12 +1,12 @@
 <?php
 
-namespace Grafite\Builder\Console;
+namespace SierraTecnologia\Builder\Console;
 
-use Grafite\Builder\Console\GrafiteCommand;
-use Grafite\Builder\Traits\FileMakerTrait;
+use SierraTecnologia\Builder\Console\SierraTecnologiaCommand;
+use SierraTecnologia\Builder\Traits\FileMakerTrait;
 use Illuminate\Filesystem\Filesystem;
 
-class Api extends GrafiteCommand
+class Api extends SierraTecnologiaCommand
 {
     use FileMakerTrait;
 
@@ -15,14 +15,14 @@ class Api extends GrafiteCommand
      *
      * @var string
      */
-    protected $signature = 'grafite:api';
+    protected $signature = 'sierratecnologia:api';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Grafite Builder will add JWT API access to your app';
+    protected $description = 'SierraTecnologia Builder will add JWT API access to your app';
 
     /**
      * Execute the console command.
@@ -79,7 +79,7 @@ class Api extends GrafiteCommand
 
                 $this->info('Finished setting up your basic JWT API');
             } else {
-                $this->info('You cancelled the grafite:api');
+                $this->info('You cancelled the sierratecnologia:api');
             }
         }
     }
