@@ -14,7 +14,7 @@ class CreateSubscriptionsTable extends Migration
     {
         Schema::create('subscriptions', function ($table) {
             $table->increments('id');
-            $table->integer('user_meta_id');
+            $table->unsignedInteger('user_meta_id');
             $table->string('name');
             $table->string('sitecpayment_id');
             $table->string('sitecpayment_plan');
