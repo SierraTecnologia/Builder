@@ -2,12 +2,12 @@
 
 namespace SierraTecnologia\Builder\Traits;
 
-use Illuminate\Console\DetectsApplicationNamespace;
+// use Illuminate\Console\DetectsApplicationNamespace;
 use Illuminate\Filesystem\Filesystem;
 
 trait FileMakerTrait
 {
-    use DetectsApplicationNamespace;
+    // use DetectsApplicationNamespace;
 
     public function copyPreparedFiles($directory, $destination)
     {
@@ -26,5 +26,9 @@ trait FileMakerTrait
         }
 
         return $fileDeployed;
+    }
+    public function getAppNamespace()
+    {
+        return 'App\\';
     }
 }
