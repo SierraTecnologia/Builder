@@ -93,7 +93,7 @@ If you don't want to worry about email activation then remove this from the rout
 'active'
 ```
 
-Update the `App\User::class` in: 'config/auth.php' and 'database/factories/UserFactory.php' to this:
+Update the `App\Models\User::class` in: 'config/auth.php' and 'database/factories/UserFactory.php' to this:
 
 ```php
 App\Models\User::class

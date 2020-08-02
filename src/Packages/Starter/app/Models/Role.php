@@ -32,7 +32,7 @@ class Role extends Model
      *
      * @var array
      */
-    public static $rules = [
+    public $rules = [
         'name' => 'required|unique:roles',
         'label' => 'required'
     ];
