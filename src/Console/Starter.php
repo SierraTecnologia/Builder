@@ -114,7 +114,7 @@ class Starter extends Command
 
         foreach ($files as $file) {
             $contents = file_get_contents($file);
-            $contents = str_replace('App\User::class', 'App\Models\User::class', $contents);
+            $contents = str_replace('App\Models\User::class', 'App\Models\User::class', $contents);
             file_put_contents($file, $contents);
         }
     }

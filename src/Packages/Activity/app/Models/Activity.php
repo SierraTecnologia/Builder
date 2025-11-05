@@ -18,7 +18,7 @@ class Activity extends Model
         'request',
     ];
 
-    public static $rules = [
+    public $rules = [
         'request' => 'required',
     ];
 }

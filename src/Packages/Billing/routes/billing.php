@@ -33,6 +33,6 @@ Route::group(['middleware' => 'auth'], function () {
 */
 
 Route::post(
-    'stripe/webhook',
-    '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook'
+    'sitecpayment/webhook',
+    '\SierraTecnologia\Cashier\Http\Controllers\WebhookController@handleWebhook'
 );

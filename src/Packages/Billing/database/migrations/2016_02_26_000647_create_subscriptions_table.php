@@ -14,10 +14,10 @@ class CreateSubscriptionsTable extends Migration
     {
         Schema::create('subscriptions', function ($table) {
             $table->increments('id');
-            $table->integer('user_meta_id');
+            $table->unsignedInteger('user_meta_id');
             $table->string('name');
-            $table->string('stripe_id');
-            $table->string('stripe_plan');
+            $table->string('sitecpayment_id');
+            $table->string('sitecpayment_plan');
             $table->integer('quantity');
             $table->timestamp('trial_ends_at')->nullable();
             $table->timestamp('ends_at')->nullable();

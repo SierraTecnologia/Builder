@@ -8,33 +8,18 @@
             "email": "contato@sierratecnologia.com.br"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/SierraTecnologia/crypto"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/SierraTecnologia/crudmaker"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/SierraTecnologia/formmaker"
-        }
-    ],
     "require": {
-        "php": ">=7.1.3",
+        "php": ">=7.4",
         "doctrine/dbal": "^2.5",
-        "illuminate/support": "^5.7",
+        "illuminate/support": "^7.0",
         "sierratecnologia/crudmaker": "dev-master",
-        "sierratecnologia/formmaker": "dev-master",
         "sierratecnologia/crypto": "dev-master"
     },
     "require-dev": {
-        "mockery/mockery": "~1.0",
-        "mikey179/vfsstream": "^1.6",
-        "orchestra/testbench": "^3.6",
-        "phpunit/phpunit": "~7.0"
+        "mockery/mockery": ">=1.0",
+        "mikey179/vfsstream": ">=1.6",
+        "orchestra/testbench": ">=3.6",
+        "phpunit/phpunit": ">=8.0"
     },
     "autoload": {
         "psr-4": {
@@ -46,6 +31,15 @@
             "tests/TestCase.php"
         ]
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../**",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [

@@ -42,7 +42,7 @@ class BillingController extends Controller
     {
         try {
             $payload = $request->all();
-            $creditCardToken = $payload['stripeToken'];
+            $creditCardToken = $payload['sitecpaymentToken'];
             auth()->user()->meta->newSubscription(config('plans.subscription_name'), config('plans.subscription'))->create($creditCardToken);
             return redirect('user/billing/details')->with('message', 'You\'re now subscribed!');
         } catch (Exception $e) {
@@ -77,7 +77,7 @@ class BillingController extends Controller
     {
         try {
             $payload = $request->all();
-            $creditCardToken = $payload['stripeToken'];
+            $creditCardToken = $payload['sitecpaymentToken'];
             auth()->user()->meta->updateCard($creditCardToken);
             return redirect('user/billing/details')->with('message', 'Your subscription has been updated!');
         } catch (Exception $e) {

@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 ----
 
+## [v3.0.0] - 2020-06-16
+
+### Changed
+- New support for Laravel 7.0
+
 ## [v2.5.1] - 2018-09-06
 
 ### Fixed

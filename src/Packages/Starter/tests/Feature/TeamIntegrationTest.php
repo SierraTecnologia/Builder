@@ -15,7 +15,7 @@ class TeamIntegrationTest extends TestCase
     protected $teamEdited;
     protected $actor;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->user = factory({{App\}}Models\User::class)->create([

@@ -14,7 +14,7 @@ class TeamServiceTest extends TestCase
     protected $originalArray;
     protected $editedArray;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->service = $this->app->make(TeamService::class);

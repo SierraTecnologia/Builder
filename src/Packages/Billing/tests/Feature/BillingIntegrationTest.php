@@ -6,7 +6,7 @@ class BillingIntegrationTest extends TestCase
 {
     use DatabaseMigrations;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->user = factory({{App\}}Models\User::class)->create([ 'id' => rand(1000, 9999) ]);
